@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".informationObjet"
+    android:background="@drawable/test">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/info"
+                    android:layout_centerHorizontal="true"
+                    android:scaleY="1.2"
+                    android:layout_marginTop="170sp"
+                    android:scaleX="1"
+                    android:layout_marginLeft="80sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text"
+                    android:src="@drawable/info2"
+                    android:scaleX="1"
+                    android:scaleY="1.4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="75sp"
+                    android:layout_marginLeft="75sp"
+
+                    />
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/retour"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="25sp"
+        android:id="@+id/retour"
+        />
+</RelativeLayout>

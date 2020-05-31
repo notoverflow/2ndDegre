@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choix"
+    android:background="@drawable/test"
+    android:windowSoftInputMode="stateHidden">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ligne1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp">
+
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a="
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:paddingLeft="5sp" />
+
+                <EditText
+                    android:id="@+id/coefA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:layout_marginLeft="40sp"
+                    android:textSize="25sp"
+                    android:layout_marginRight="45sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ligne2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_below="@id/ligne1">
+
+
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b="
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:paddingLeft="5sp" />
+
+
+                <EditText
+                    android:id="@+id/coefB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/b"
+                    android:layout_alignBottom="@id/b"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ligne3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_below="@id/ligne2">
+
+                <TextView
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c="
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:paddingLeft="5sp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/coefC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/delta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delta"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ligne3"
+                android:layout_marginTop="25sp"
+                android:paddingLeft="25sp"
+                android:layout_margin="15sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+
+            <Button
+                android:id="@+id/équatioon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/factoriser"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15sp"
+                android:text="Résolution d'équation"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/inéquatioon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/équatioon"
+                android:layout_centerInParent="true"
+                android:layout_margin="15sp"
+                android:text="Résolution d'inéquation"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/variation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inéquatioon"
+                android:layout_centerInParent="true"
+                android:layout_margin="15sp"
+                android:text="variation de la parabole"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/graphique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/variation"
+                android:layout_centerInParent="true"
+                android:layout_margin="15sp"
+                android:text="graphique"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+
+            <Button
+                android:id="@+id/extrémum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graphique"
+                android:layout_centerInParent="true"
+                android:layout_margin="15sp"
+                android:text="extremum"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/balllistique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/extrémum"
+                android:layout_centerInParent="true"
+                android:layout_margin="15sp"
+                android:text="Objet lancé"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+            |
+
+            <Button
+                android:id="@+id/canonique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forme canonique"
+                android:layout_below="@id/delta"
+                android:layout_margin="15sp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/factoriser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forme factorisée"
+                android:layout_below="@id/canonique"
+                android:layout_margin="15sp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp"
+                android:background="@drawable/round_button" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

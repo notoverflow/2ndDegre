@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_5"
+    android:background="@drawable/test">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Résolution d'inéquation"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titre">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/formule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="ax²+bx+c"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formule"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="a="
+                android:layout_marginLeft="15sp" />
+
+            <TextView
+                android:id="@+id/aV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/a"
+                android:layout_alignBottom="@+id/a"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="b="
+                android:layout_marginLeft="15sp" />
+
+            <TextView
+                android:id="@+id/bV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/b"
+                android:layout_alignBottom="@+id/b"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="c="
+                android:layout_marginLeft="15sp" />
+
+            <TextView
+                android:id="@+id/cV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/c"
+                android:layout_alignBottom="@+id/c"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/delta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="Δ="
+                android:layout_marginLeft="15sp" />
+
+
+            <TextView
+                android:id="@+id/deltaV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_toRightOf="@id/delta"
+                android:layout_alignBottom="@+id/delta"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x0"
+                android:layout_below="@id/delta"
+                android:layout_marginLeft="15sp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/x2"
+                android:layout_below="@id/x0"
+                android:layout_marginLeft="15sp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/blabla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_below="@id/x2"
+                android:textAlignment="center"
+                android:text="Résultat de l'inéquation"
+                android:gravity="center_horizontal" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/evrey"
+                android:layout_below="@id/blabla"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blabla"
+                    android:layout_marginTop="25sp"
+                    android:id="@+id/B1"
+                    android:textColor="@color/white"
+                    android:text="@string/inf"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="10sp"
+                    />
+
+
+
+                <RadioButton
+
+
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blabla"
+                    android:layout_marginTop="25sp"
+                    android:id="@+id/B2"
+                    android:layout_marginLeft="15sp"
+                    android:textColor="@color/white"
+                    android:text=">0"
+                    android:textSize="25sp"
+                    android:layout_toRightOf="@id/B1" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blabla"
+                    android:layout_marginTop="25sp"
+                    android:id="@+id/B3"
+                    android:layout_marginLeft="15sp"
+                    android:textColor="@color/white"
+                    android:text="≤0"
+                    android:textSize="25sp"
+                    android:layout_toRightOf="@id/B2" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blabla"
+                    android:layout_marginTop="25sp"
+                    android:id="@+id/B4"
+                    android:layout_marginLeft="15sp"
+                    android:layout_toRightOf="@id/B3"
+                    android:layout_marginRight="10sp"
+                    android:textColor="@color/white"
+                    android:text="≥0"
+                    android:textSize="25sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:id="@+id/forme"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/evrey"
+                android:layout_marginTop="25sp"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image"
+                android:layout_below="@id/forme"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/résultat"
+                android:layout_below="@id/image"
+                android:layout_marginTop="25sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                />
+
+
+
+
+            <ImageView
+                android:id="@+id/retour"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/retour"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="25sp"
+                android:layout_marginRight="25sp"
+
+                />
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

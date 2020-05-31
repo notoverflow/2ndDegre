@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_9"
+    android:background="@drawable/test">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:text="Objet lancé avec une vitesse V₀  et formant un angle α avec l'horizon."/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dessin"
+                android:background="@color/white"
+                android:layout_marginTop="25sp"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/V0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/image"
+                android:textSize="25sp"
+                android:text="V₀="
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="25sp"
+                />
+
+            <EditText
+                android:id="@+id/V0V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/V0"
+                android:layout_alignBottom="@id/V0"
+                android:inputType="number|numberDecimal"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+
+
+            <TextView
+                android:id="@+id/H"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/V0"
+                android:textSize="25sp"
+                android:text="H="
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/H0V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/H"
+                android:layout_alignBottom="@id/H"
+                android:inputType="number|numberDecimal"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+
+
+            <TextView
+                android:layout_marginLeft="25sp"
+                android:id="@+id/alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_below="@id/H"
+                android:layout_marginTop="25sp"
+                android:text="α="
+                />
+
+            <EditText
+                android:id="@+id/alphaV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@id/alpha"
+                android:layout_toRightOf="@id/alpha"
+                android:inputType="number|numberDecimal"
+
+                />
+
+            <ImageView
+                android:layout_width="55sp"
+                android:layout_height="55sp"
+                android:layout_below="@id/alpha"
+                android:src="@drawable/information"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:id="@+id/informationButton"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alpha"
+                android:layout_centerInParent="true"
+                android:text="Calculer"
+                android:id="@+id/calculer"
+                android:background="@drawable/round_button"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_below="@id/calculer"
+                android:layout_marginTop="25sp"
+                android:text="Les équations horaires sont:"
+                android:layout_centerInParent="true"
+                android:id="@+id/azer"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/azer"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:id="@+id/résultatHoraires"
+                android:text="entrer les valeurs puis appuyer sur calculer pour avoir le résultat"
+
+                android:layout_marginLeft="25sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_below="@id/résultatHoraires"
+                android:layout_marginTop="25sp"
+                android:text="L'équation du mouvement est:"
+                android:layout_centerInParent="true"
+                android:id="@+id/reza"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reza"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:id="@+id/résultatMouvement"
+                android:text="entrer les valeurs puis appuyer sur calculer pour avoir le résultat"
+                android:layout_marginLeft="25sp"
+
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/retour"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginEnd="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+
+
+</RelativeLayout>

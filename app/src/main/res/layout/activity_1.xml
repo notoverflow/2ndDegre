@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_1"
+    android:background="@drawable/test">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delta"
+        android:textSize="55sp"
+        android:textColor="@color/white"
+
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/retour"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/retour"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="25sp"
+
+        />
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a="
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="80sp"
+        android:layout_marginLeft="15sp"
+
+        />
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b="
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/a"
+        android:layout_marginLeft="15sp"
+
+        />
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="c="
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/b"
+        android:layout_marginLeft="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/valeurA"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/a"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@id/a"
+        android:text="."
+
+        />
+
+    <TextView
+        android:id="@+id/valeurB"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/b"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@id/b"
+        android:text="."
+
+        />
+
+    <TextView
+        android:id="@+id/valeurC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/c"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@id/c"
+        android:text="XXX"
+
+        />
+
+    <TextView
+        android:id="@+id/textdelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Δ=b²-4ac"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/c"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:text="Δ="
+        android:layout_below="@id/textdelta"
+        android:layout_marginLeft="15sp"
+        />
+
+    <TextView
+        android:id="@+id/delta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/d"
+        android:text="XXX"
+        android:layout_alignBottom="@id/d"
+
+        />
+
+
+
+
+</RelativeLayout>
