@@ -1,4 +1,4 @@
-package com.lol.et.manu.a2nddegre;
+package com.notoverflow.a2nddegre;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.lol.et.manu.a2nddegre", appContext.getPackageName());
+        assertEquals("com.notoverflow.a2nddegre", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.lol.et.manu.a2nddegre;
+package com.notoverflow.a2nddegre;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

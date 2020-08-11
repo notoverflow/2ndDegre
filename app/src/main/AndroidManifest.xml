@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lol.et.manu.a2nddegre">
+    package="com.notoverflow.a2nddegre">
 
     <application
         android:allowBackup="true"
