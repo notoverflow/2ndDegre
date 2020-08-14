@@ -25,25 +25,37 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/info"
                     android:layout_centerHorizontal="true"
-                    android:scaleY="1.2"
-                    android:layout_marginTop="170sp"
+                    android:layout_marginLeft="80sp"
+                    android:layout_marginTop="-180dp"
                     android:scaleX="1"
-                    android:layout_marginLeft="80sp"/>
+                    android:scaleY="1.2"
+                    android:src="@drawable/info" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/text"
-                    android:src="@drawable/info2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="75sp"
+                    android:layout_marginTop="-934dp"
                     android:scaleX="1"
                     android:scaleY="1.4"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="75sp"
-                    android:layout_marginLeft="75sp"
+                    android:src="@drawable/info2"
 
                     />
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+                </com.google.android.gms.ads.AdView>
+
 
             </RelativeLayout>
         </HorizontalScrollView>

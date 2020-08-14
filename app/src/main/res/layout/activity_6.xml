@@ -21,6 +21,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal" />
 
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +29,7 @@
         >
 
         <RelativeLayout
+            android:id="@+id/relative"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -145,9 +147,13 @@
                 android:id="@+id/variation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/apositif"
                 android:layout_below="@id/blabla"
-                />
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/apositif" />
 
             <TextView
                 android:id="@+id/ValeurDeX"
@@ -183,19 +189,30 @@
 
 
         <ImageView
+            android:layout_below="@id/variation"
             android:id="@+id/retour"
             android:layout_width="50sp"
             android:layout_height="50sp"
             android:src="@drawable/retour"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_marginBottom="25sp"
             android:layout_marginRight="25sp"
 
             />
-    </RelativeLayout>
-    </ScrollView>
 
+            <com.google.android.gms.ads.AdView
+                android:layout_below="@id/retour"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

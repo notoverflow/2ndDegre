@@ -20,12 +20,19 @@
         <activity android:name=".Activity_1" />
         <activity android:name=".choix" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--            id : ca-app-pub-9696781235898812~5262193751-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9696781235898812~5262193751"/>
+
     </application>
 
 </manifest>
