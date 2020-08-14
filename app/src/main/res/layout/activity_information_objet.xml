@@ -8,6 +8,13 @@
     tools:context=".informationObjet"
     android:background="@drawable/test">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adView"
+        >
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,28 +40,18 @@
                     android:src="@drawable/info" />
 
                 <ImageView
+                    android:id="@+id/image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/text"
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="75sp"
-                    android:layout_marginTop="-934dp"
+                    android:layout_marginTop="-1230dp"
                     android:scaleX="1"
                     android:scaleY="1.4"
                     android:src="@drawable/info2"
 
                     />
-
-                <com.google.android.gms.ads.AdView
-                    xmlns:ads="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/adView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true"
-                    ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-                </com.google.android.gms.ads.AdView>
 
 
             </RelativeLayout>
@@ -71,4 +68,21 @@
         android:layout_marginBottom="25sp"
         android:id="@+id/retour"
         />
+
+
+</RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="25sp"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
 </RelativeLayout>

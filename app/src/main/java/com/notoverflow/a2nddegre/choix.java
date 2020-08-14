@@ -29,16 +29,6 @@ public class choix extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choix);
 
-
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-
-
-            }
-        });
-
-
         Button b1 = findViewById(R.id.delta);
         Button b2 = findViewById(R.id.canonique);
         Button b3 = findViewById(R.id.factoriser);
