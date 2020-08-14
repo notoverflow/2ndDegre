@@ -200,6 +200,7 @@ public class choix extends AppCompatActivity {
         }
         else Toast.makeText(getApplicationContext(),"Les Coefs ne sont pas correct",Toast.LENGTH_SHORT).show();
 
+        loadPub();
     }
 
     @Override
