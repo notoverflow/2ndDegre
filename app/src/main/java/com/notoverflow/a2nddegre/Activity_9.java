@@ -21,19 +21,20 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class Activity_9 extends AppCompatActivity {
-    private    AdRequest adRequest;
-    private AdView    adView;
 
     private EditText V0V,HV,alphaV;
-    private TextView résultatHoraires = findViewById(R.id.résultatHoraires);
-    private TextView résultatMouvement = findViewById(R.id.résultatMouvement);
+    private TextView résultatTime;
+
+    private   TextView  résultatMovement;
+    private AdRequest adRequest;
+    private   AdView    adView;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_9);
-
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -43,6 +44,10 @@ public class Activity_9 extends AppCompatActivity {
             }
         });
 
+
+
+        résultatTime     = findViewById(R.id.résultatHoraires);
+        résultatMovement = findViewById(R.id.résultatMouvement);
 
 
 
@@ -101,8 +106,8 @@ public class Activity_9 extends AppCompatActivity {
                 if (ok) {
 
 
-                    résultatHoraires.setText ("x≈"+ (String.format ("% .3g",(((Math.cos (alpha*3.14159265359/180)* v1)))))+"*t\ny≈-4.9*t²+"+(String.format ("% .3g",((v1*Math.sin (alpha*3.14159265359/180)))))+"t+"+(String.format ("% .3g",(h))));
-                    résultatMouvement.setText("y≈ "+(String.format ("% .3g", (((-4.9/(v1*v1*Math.cos (alpha*3.14159265359/180)*Math.cos (alpha*3.14159265359/180))))))+"x²+"+(String.format ("% .3g",((Math.tan (alpha*3.14159265359/180)))))+"*x+"+(String.format ("% .3g",(h)))));
+                    résultatTime.setText ("x≈"+ (String.format ("% .3g",(((Math.cos (alpha*3.14159265359/180)* v1)))))+"*t\ny≈-4.9*t²+"+(String.format ("% .3g",((v1*Math.sin (alpha*3.14159265359/180)))))+"t+"+(String.format ("% .3g",(h))));
+                    résultatMovement.setText("y≈ "+(String.format ("% .3g", (((-4.9/(v1*v1*Math.cos (alpha*3.14159265359/180)*Math.cos (alpha*3.14159265359/180))))))+"x²+"+(String.format ("% .3g",((Math.tan (alpha*3.14159265359/180)))))+"*x+"+(String.format ("% .3g",(h)))));
 
                 }
                 else Toast.makeText(getApplicationContext(),"Remplir les données et cliquer sur calculer",Toast.LENGTH_SHORT).show();
@@ -119,9 +124,7 @@ public class Activity_9 extends AppCompatActivity {
             }
         });
         loadPub();
-
     }
-
     @Override
     protected void onPostResume() {
         super.onPostResume();
@@ -154,10 +157,10 @@ public class Activity_9 extends AppCompatActivity {
                 .addTestDevice("72BC668537B5617DBB7381C8C100AF34")      // id dui device de test pour les pubs
                 .build();
 
-        adView=findViewById(R.id.adView);
+        adView = findViewById(R.id.adView);
         adView.loadAd(adRequest);
 
-        adView.setAdListener(new AdListener(){
+        adView.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
                 super.onAdClosed();
@@ -184,8 +187,6 @@ public class Activity_9 extends AppCompatActivity {
             }
         });
 
-
     }
-
 
 }

@@ -19,6 +19,7 @@
         android:gravity="center_horizontal" />
 
     <ScrollView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titre">
@@ -247,16 +248,16 @@
                 android:id="@+id/retour"
                 android:layout_width="50sp"
                 android:layout_height="50sp"
+
                 android:src="@drawable/retour"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginBottom="25sp"
+                android:layout_marginBottom="75sp"
                 android:layout_marginRight="25sp"
-
                 />
+
 </RelativeLayout>
     </ScrollView>
-
 
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
@@ -267,6 +268,8 @@
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
     </com.google.android.gms.ads.AdView>
+
 </RelativeLayout>
 

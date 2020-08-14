@@ -45,6 +45,7 @@ public class informationObjet extends AppCompatActivity {
                 finish();
             }
         });
+        loadPub();
     }
 
 

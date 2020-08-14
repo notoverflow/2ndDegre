@@ -22,13 +22,12 @@ public class choix extends AppCompatActivity {
     private AdView    adView;
 
 
-    private EditText aV,bV,cV;
+    private EditText aV, bV, cV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choix);
-
 
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -50,9 +49,9 @@ public class choix extends AppCompatActivity {
         Button b9 = findViewById(R.id.balllistique);
         Button b8 = findViewById(R.id.extrémum);
 
-        aV=findViewById(R.id.coefA);
-        bV=findViewById(R.id.coefB);
-        cV=findViewById(R.id.coefC);
+        aV = findViewById(R.id.coefA);
+        bV = findViewById(R.id.coefB);
+        cV = findViewById(R.id.coefC);
 
 
         b1.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +68,7 @@ public class choix extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_2.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_2.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -79,7 +78,7 @@ public class choix extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_3.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_3.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -89,7 +88,7 @@ public class choix extends AppCompatActivity {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_4.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_4.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -99,7 +98,7 @@ public class choix extends AppCompatActivity {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_5.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_5.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -109,7 +108,7 @@ public class choix extends AppCompatActivity {
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_6.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_6.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -119,7 +118,7 @@ public class choix extends AppCompatActivity {
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_7.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_7.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -129,7 +128,7 @@ public class choix extends AppCompatActivity {
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_8.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_8.class);
 
                 activiteSuivante(activitysuivante);
             }
@@ -140,53 +139,51 @@ public class choix extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent activitysuivante = new Intent(getApplicationContext(),Activity_9.class );
+                Intent activitysuivante = new Intent(getApplicationContext(), Activity_9.class);
 
                 startActivity(activitysuivante);
 
             }
         });
+        loadPub();
     }
 
 
-
-    void activiteSuivante(Intent act)
-    {
+    void activiteSuivante(Intent act) {
 
 
-        float a,b,c;
+        float a, b, c;
 
 
         boolean ok;
 
         String txt;
 
-        ok =true;
-        a=0;
-        b=0;
-        c=0;
+        ok = true;
+        a  = 0;
+        b  = 0;
+        c  = 0;
 
 
         txt = aV.getText().toString();
-        if (txt.length()>0)
+        if (txt.length() > 0)
             a = Float.parseFloat(txt);
-        else ok=false;
+        else ok = false;
 
-        if (a==0)
-        {
-            ok=false;
+        if (a == 0) {
+            ok = false;
         }
 
         txt = bV.getText().toString();
-        if (txt.length()>0)
+        if (txt.length() > 0)
             b = Float.parseFloat(txt);
-        else ok=false;
+        else ok = false;
 
 
         txt = cV.getText().toString();
-        if (txt.length()>0)
+        if (txt.length() > 0)
             c = Float.parseFloat(txt);
-        else ok=false;
+        else ok = false;
 
         if (ok) {
 
@@ -197,11 +194,10 @@ public class choix extends AppCompatActivity {
 //fin des transmision des données
 
             startActivity(act);
-        }
-        else Toast.makeText(getApplicationContext(),"Les Coefs ne sont pas correct",Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(getApplicationContext(), "Les Coefs ne sont pas correct", Toast.LENGTH_SHORT).show();
 
-        loadPub();
     }
+
 
     @Override
     protected void onPostResume() {
@@ -228,7 +224,6 @@ public class choix extends AppCompatActivity {
 
         }
         super.onDestroy();
-        loadPub();
     }
 
     private void loadPub() {
@@ -236,10 +231,10 @@ public class choix extends AppCompatActivity {
                 .addTestDevice("72BC668537B5617DBB7381C8C100AF34")      // id dui device de test pour les pubs
                 .build();
 
-        adView=findViewById(R.id.adView);
+        adView = findViewById(R.id.adView);
         adView.loadAd(adRequest);
 
-        adView.setAdListener(new AdListener(){
+        adView.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
                 super.onAdClosed();
@@ -265,7 +260,6 @@ public class choix extends AppCompatActivity {
                 super.onAdClicked();
             }
         });
-
 
     }
 
