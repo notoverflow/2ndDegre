@@ -27,13 +27,7 @@ public class Activity_4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_4);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-
-
-            }
-        });
+      loadPub();
 
         float a,c,b,d;
 
@@ -117,7 +111,6 @@ public class Activity_4 extends AppCompatActivity {
             }
         });
 
-        loadPub();
 
     }
 

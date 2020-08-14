@@ -26,13 +26,7 @@ public class informationObjet extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
 
-
-            }
-        });
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_objet);
