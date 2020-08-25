@@ -20,7 +20,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class MainActivity extends AppCompatActivity {
 
-       private AdRequest adRequest;
+    private AdRequest adRequest;
     private AdView adView;
 
 

@@ -28,13 +28,6 @@ public class Activity_8 extends AppCompatActivity {
         setContentView(R.layout.activity_8);
 
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-
-
-            }
-        });
 
         float a,c,b,d,corX,corY;
 

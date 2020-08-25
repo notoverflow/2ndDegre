@@ -7,6 +7,12 @@
     tools:context=".Activity_4"
     android:background="@drawable/test">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adView"
+        >
+
     <TextView
         android:id="@+id/titre"
         android:layout_width="wrap_content"
@@ -251,6 +257,10 @@
 
     </ScrollView>
 
+
+
+</RelativeLayout>
+
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
@@ -259,9 +269,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-9696781235898812/6511039702">
+        ads:adUnitId="ca-app-pub-9696781235898812/4707019354">
     </com.google.android.gms.ads.AdView>
-
-
 
 </RelativeLayout>

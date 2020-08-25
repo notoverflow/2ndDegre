@@ -27,13 +27,6 @@ public class Activity_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_1);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-
-
-            }
-        });
 
         float a,c,b,d;
 //récupération des donner
