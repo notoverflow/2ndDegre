@@ -10,6 +10,9 @@
 
     >
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <TextView
         android:id="@+id/titre"
         android:layout_width="wrap_content"
@@ -26,10 +29,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titre"
+        android:layout_marginBottom="75sp"
         >
 
         <RelativeLayout
             android:id="@+id/relative"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -198,22 +203,27 @@
             android:layout_marginRight="25sp"
             android:layout_marginBottom="25sp"
 
+
             />
 
-            <com.google.android.gms.ads.AdView
-                android:layout_below="@id/retour"
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                ads:adSize="BANNER"
-                ads:adUnitId="ca-app-pub-9696781235898812/2380223007">
-            </com.google.android.gms.ads.AdView>
 
         </RelativeLayout>
     </ScrollView>
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9696781235898812/2380223007">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
